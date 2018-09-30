@@ -7,9 +7,9 @@ xrandr --dpi 100
 # TODO figure out why this doesn't work
 #xmodmap ~/.Xmodmap
 
-xautolock -time 5 -locker "i3lock -i $HOME/.config/i3/arch-linux-logo-binary-code-minimal.png" &
-xautolock -time 10 -locker "systemctl suspend" &
+#xautolock -time 5 -locker "i3lock -i $HOME/.config/i3/arch-linux-logo-binary-code-minimal.png" &
+xset dpms 0 300 0
+xss-lock -- i3lock -n -i $HOME/.config/i3/arch-linux-logo-binary-code-minimal.png &
 
 # Applications
 #nm-applet &
-
