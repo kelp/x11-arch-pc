@@ -1,0 +1,14 @@
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export GDK_SCALE=1
+[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+xrandr --dpi 100
+# TODO figure out why this doesn't work
+#xmodmap ~/.Xmodmap
+
+xautolock -time 10 -locker "i3lock -i $HOME/.config/i3/arch-linux-logo-binary-code-minimal.png" &
+
+# Applications
+#nm-applet &
+
