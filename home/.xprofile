@@ -9,7 +9,7 @@ xrandr --dpi 100
 
 #xautolock -time 5 -locker "i3lock -i $HOME/.config/i3/arch-linux-logo-binary-code-minimal.png" &
 xset dpms 0 300 0
-xss-lock -- i3lock -n -i $HOME/.config/i3/arch-linux-logo-binary-code-minimal.png &
+xss-lock -n /usr/lib/xsecurelock/dimmer -l -- env XSECURELOCK_SAVER=saver_xscreensaver xsecurelock &
 
 # Applications
-#nm-applet &
+nm-applet &
