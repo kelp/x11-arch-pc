@@ -3,7 +3,7 @@ export GDK_SCALE=1
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
-xrandr --dpi 100
+xrandr --dpi 110
 # TODO figure out why this doesn't work
 #xmodmap ~/.Xmodmap
 
